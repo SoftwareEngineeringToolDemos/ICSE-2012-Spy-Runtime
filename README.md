@@ -3,7 +3,7 @@
 This repository contains information related to the tool Spy@Runtime presented at International Conference on Software Engineering, 2012. The tool was originally presented in <a href="http://dl.acm.org/citation.cfm?id=2337430">this paper</a>
 
 
-This repository is not the original repository for this tool. Here are some links to the original project:
+This repository <b><i>IS NOT</i></b> the original repository for this tool. Here are some links to the original project:
 
 <a href="http://www.inf.usi.ch/postdoc/mocci/spy-testing/index.xhtml">The Official Project Page, including source code</a><br>
 <a href="http://www.inf.usi.ch/postdoc/mocci/spy-testing/tool.xhtml">The Tool on the Visual Studio Gallery</a><br>
