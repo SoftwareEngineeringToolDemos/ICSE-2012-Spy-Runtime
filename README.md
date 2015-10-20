@@ -1,6 +1,6 @@
 # ICSE-2012-Spy-Runtime
 
-This repository contains information related to the tool Spy@Runtime presented at International Conference on Software Engineering, 2012. The tool was originally presented in <a href="http://dl.acm.org/citation.cfm?id=2337430">this paper</a>
+This repository contains information related to the tool Spy@Runtime presented at the International Conference on Software Engineering, 2012. The tool was originally presented in <a href="http://dl.acm.org/citation.cfm?id=2337430">this paper.</a>
 
 
 This repository <b><i>IS NOT</i></b> the original repository for this tool. Here are some links to the original project:
