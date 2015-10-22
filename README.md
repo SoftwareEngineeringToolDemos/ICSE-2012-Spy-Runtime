@@ -6,7 +6,6 @@ This repository contains information related to the tool Spy@Runtime presented a
 This repository <b><i>IS NOT</i></b> the original repository for this tool. Here are some links to the original project:
 
 [The Official Project Page, including source code](http://www.inf.usi.ch/postdoc/mocci/spy-testing/index.xhtml)<br/>
-[The Tool on the Visual Studio Gallery](http://www.inf.usi.ch/postdoc/mocci/spy-testing/tool.xhtml)<br/>
 [A Video of the Tool](https://youtu.be/EqQ7k_UG448)
 
 In this repository for Spy@Runtime, you will find:
