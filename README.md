@@ -18,4 +18,6 @@ Instructions to Run - <br>
 -Use <b>./run-spy-quick.sh -w it.polimi.dei.spy.wrappers.StorageServiceClientViewWrapper storageServerClient.StorageServiceClientView</b> for Model generation and 
 <b>./run-monitoring.sh config/monitoring-storageservice.xml  storageServerClient.StorageServiceClientGUIToMonitor</b> command to enable Monitoring facility instead of using the corresponding commands given in the website. <br>
 
+The Virtual machine for the tool is a 64bit image.
+
 This repository was constructed by [Sindhu Vairavel](https://github.com/SindhuVairavel) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Mario Sangiorgio and Andrea Mocci for their help in establishing this repository.
