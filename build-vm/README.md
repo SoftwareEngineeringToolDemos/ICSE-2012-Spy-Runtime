@@ -14,6 +14,9 @@
 - VM login details:
   Username: vagrant
   Password: vagrant
+- Default VM Login Credentials:  
+      user: vagrant  
+      password: vagrant
 
 ## Acknowledgement:
 
