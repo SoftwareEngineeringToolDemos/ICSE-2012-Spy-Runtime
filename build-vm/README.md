@@ -11,7 +11,7 @@
 
 - The "vagrant up" takes about half an hour.
 - The base box on which this VM is built is <a href=https://atlas.hashicorp.com/hashicorp/boxes/precise64>Ubuntu Server 12.04</a>
-- Login details:  
+- VM Login details:  
       Username: vagrant  
       Password: vagrant
 
