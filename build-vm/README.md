@@ -3,10 +3,7 @@
 ## Please follow the below steps:
 
 1. Install <a href="https://www.vagrantup.com/downloads.html">Vagrant</a> and <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> on the host machine.
-2. From <a href="https://github.com/SoftwareEngineeringToolDemos/ICSE-2012-Spy-Runtime/tree/master/build-vm">build-vm</a>, download <a href="https://github.com/SoftwareEngineeringToolDemos/ICSE-2012-Spy-Runtime/blob/master/build-vm/Vagrantfile">Vagrantfile</a>.
-
-
- Download the <a href="https://github.com/SoftwareEngineeringToolDemos/ICSE-2012-Spy-Runtime/blob/master/build-vm/Vagrantfile">Vagrantfile</a> from <a href="https://github.com/SoftwareEngineeringToolDemos/ICSE-2012-Spy-Runtime/tree/master/build-vm">build-vm</a> directory to your machine.
+2. From the <a href="https://github.com/SoftwareEngineeringToolDemos/ICSE-2012-Spy-Runtime/tree/master/build-vm">build-vm</a>directory, download <a href="https://github.com/SoftwareEngineeringToolDemos/ICSE-2012-Spy-Runtime/blob/master/build-vm/Vagrantfile">Vagrantfile</a>.
 3. In the command prompt(in Windows)/bash(in Linux) of host machine, cd into the directory containing the Vagrantfile and run "vagrant up"
 
 
