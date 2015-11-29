@@ -29,14 +29,21 @@ config.vm.provision "shell", inline: <<-SHELL
   sudo apt-get install lightdm -y
   echo "autologin-user=vagrant" | sudo tee --append /etc/lightdm/lightdm.conf	
 
+
+  # Download the files from the below mentioned link
   sudo wget -O /home/vagrant/Downloads/spy_runtime.zip https://github.com/akottal/SpyRuntimeAllFiles/archive/master.zip
   cd /home/vagrant/Downloads/
   sudo unzip spy_runtime.zip
+  
+  # Copy all the files from Downloads, to the Desktop
   sudo cp -r SpyRuntimeAllFiles-master/* /home/vagrant/Desktop/
   cd /home/vagrant/Desktop/
+  
+  # Giving permission to read & write
   sudo chmod -R 777 spy-monitoring
   cd spy-monitoring
-  # Remove icons from the launcher. Only leave the icons for home directory, settings and firefox.
+  
+  # Remove icons from the launcher and leaving the icons for home directory, settings and firefox.
 	sudo mkdir /home/vagrant/icons_backup
 	sudo mv /usr/share/applications/ubuntu-software-center.desktop /home/vagrant/icons_backup
 	sudo mv /usr/share/applications/ubuntuone-installer.desktop /home/vagrant/icons_backup
