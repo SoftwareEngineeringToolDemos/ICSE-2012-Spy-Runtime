@@ -1,28 +1,42 @@
 # -*- mode: ruby -*-
+
 # vi: set ft=ruby :
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
-Vagrant.configure(2) do |config|
-  config.vm.box = "hashicorp/precise64"
-  
-  config.vm.hostname = "SpyRuntime"
 
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "box-cutter/ubuntu1404-desktop"  
+  config.vm.hostname = "SpyRuntime"
+  
   config.vm.provider "virtualbox" do |vb|
-    # Display the VirtualBox GUI when booting the machine
-    # vb.gui = true
-    # Customize the amount of memory on the VM:
-    vb.memory = "1024"
+	# Display the VirtualBox GUI when booting the machine  
+	# vb.gui = true
+	# Customize the amount of memory on the VM 
+	vb.memory = "1024"
 	vb.name = "SpyRuntime"
   end
 
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get update
-	sudo apt-get install -y ubuntu-desktop
-	sudo wget --no-check-certificate https://github.com/aglover/ubuntu-equip/raw/master/equip_java8.sh && bash equip_java8.sh
-	useradd -m -s /bin/bash -U SpyRuntime
-  SHELL
-end
+  
+config.vm.provision "shell", inline: <<-SHELL
+  sudo apt-get update
+  sudo wget --no-check-certificate https://github.com/aglover/ubuntu-equip/raw/master/equip_java8.sh && bash equip_java8.sh
+  
+  # Install lightdm for autologin and setup autologin for user "vagrant"  
+  sudo apt-get install lightdm -y
+  echo "autologin-user=vagrant" | sudo tee --append /etc/lightdm/lightdm.conf	
 
+  sudo wget -O /home/vagrant/Downloads/spy_runtime.zip https://github.com/akottal/SpyRuntimeAllFiles/archive/master.zip
+  cd /home/vagrant/Downloads/
+  sudo unzip spy_runtime.zip
+  sudo cp -r SpyRuntimeAllFiles-master/* /home/vagrant/Desktop/
+  cd /home/vagrant/Desktop/
+  sudo chmod -R 755 spy-monitoring
+  cd spy-monitoring
+  #./run-server.sh &
+SHELL
+
+end
