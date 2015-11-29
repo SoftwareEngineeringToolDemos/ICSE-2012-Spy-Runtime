@@ -34,7 +34,7 @@ config.vm.provision "shell", inline: <<-SHELL
   sudo unzip spy_runtime.zip
   sudo cp -r SpyRuntimeAllFiles-master/* /home/vagrant/Desktop/
   cd /home/vagrant/Desktop/
-  sudo chmod -R 755 spy-monitoring
+  sudo chmod -R 777 spy-monitoring
   cd spy-monitoring
 SHELL
 
