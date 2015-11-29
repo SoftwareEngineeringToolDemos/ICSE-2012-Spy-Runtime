@@ -36,7 +36,6 @@ config.vm.provision "shell", inline: <<-SHELL
   cd /home/vagrant/Desktop/
   sudo chmod -R 755 spy-monitoring
   cd spy-monitoring
-  #./run-server.sh &
 SHELL
 
 end
