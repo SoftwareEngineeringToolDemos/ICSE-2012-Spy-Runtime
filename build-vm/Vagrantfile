@@ -36,6 +36,11 @@ config.vm.provision "shell", inline: <<-SHELL
   cd /home/vagrant/Desktop/
   sudo chmod -R 777 spy-monitoring
   cd spy-monitoring
+  # Remove icons from the launcher. Only leave the icons for home directory, settings and firefox.
+	sudo mkdir /home/vagrant/icons_backup
+	sudo mv /usr/share/applications/ubuntu-software-center.desktop /home/vagrant/icons_backup
+	sudo mv /usr/share/applications/ubuntuone-installer.desktop /home/vagrant/icons_backup
+	sudo mv /usr/share/applications/libreoffice-*.desktop /home/vagrant/icons_backup
 SHELL
 
 end
