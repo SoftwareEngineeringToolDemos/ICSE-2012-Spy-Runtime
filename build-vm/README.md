@@ -18,3 +18,4 @@
 ## Acknowledgement:
 
 - The commands for installing Java 8 have been taken from <a href="https://github.com/aglover">Andrew Glover's<a> <a href="https://github.com/aglover/ubuntu-equip">github repository</a>.
+- The tutorial for Vagrant has been taken from [Vagrant Tutorial] by Dustin Barnes (http://www.dev9.com/article/2014/9/dev-environments-with-vagrant) 
