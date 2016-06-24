@@ -9,10 +9,9 @@ This repository <b><i>IS NOT</i></b> the original repository for this tool. Here
 [A Video of the Tool](https://youtu.be/EqQ7k_UG448)
 
 In this repository for Spy@Runtime, you will find:
-
-:white_check_mark: Source code (available)<br>
-:white_check_mark: The original tool (available)<br>
-:white_check_mark: [Virtual machine containing tool](https://drive.google.com/open?id=0B8FWyUGhtYH0c2RodHM3alNwSEU)<br>
+* :white_check_mark: Source code (available)
+* :white_check_mark: The original tool (available)
+* :white_check_mark: [Virtual machine containing tool](http://go.ncsu.edu/SE-tool-VMs)
 
 Instructions to Run - <br>
 -Follow the steps given in the Tool website. <br>
